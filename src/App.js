@@ -1,23 +1,16 @@
-import logo from './logo.svg';
+import SocialMedia from './assets/components/SocialMedia';
+import Statistic from './assets/components/Statistics';
+import SubscribeForm from './assets/components/SubscribeForm';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App flex  justify-center background min-h-screen bg-white">
+     <div className='App_cointainer max-w-screen-sm flex flex-col m-12 items-center'>
+     <SubscribeForm/>
+     <Statistic/>
+     <SocialMedia/>
+     </div>
     </div>
   );
 }
